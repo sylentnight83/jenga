@@ -205,6 +205,8 @@ namespace HoloToolkit.Unity.InputModule
                 HitPosition = GazeOrigin + (GazeNormal * lastHitDistance);
             }
             return previousFocusObject;
+
+  
         }
 
         /// <summary>
