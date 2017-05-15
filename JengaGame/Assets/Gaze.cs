@@ -18,7 +18,9 @@ public class Gaze : MonoBehaviour {
                 out hitInfo,
                 20.0f,
                 Physics.DefaultRaycastLayers))
-
+          
+            //acknowledge in console we are looking at a hologram/object. 
+            //Hit indicates the point a cursor will hit an object
             print("hit");
 
 
