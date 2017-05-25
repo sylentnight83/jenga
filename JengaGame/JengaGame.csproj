@@ -81,6 +81,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BrickCommands.cs" />
+    <Compile Include="Assets\CubeManager.cs" />
     <Compile Include="Assets\Gaze.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\MetroHandleRef.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\Reflection\ReflectionExtensions.cs" />
@@ -95,8 +97,10 @@
     <Compile Include="Assets\HoloToolkit\Input\Scripts\Cursor\MeshCursor.cs" />
     <Compile Include="Assets\HoloToolkit\Input\Scripts\Cursor\ObjectCursor.cs" />
     <Compile Include="Assets\HoloToolkit\Input\Scripts\Cursor\SpriteCursor.cs" />
+    <Compile Include="Assets\HoloToolkit\Input\Scripts\Cursor\WorldCursor.cs" />
     <Compile Include="Assets\HoloToolkit\Input\Scripts\GameControllerManipulator.cs" />
     <Compile Include="Assets\HoloToolkit\Input\Scripts\Gaze\BaseRayStabilizer.cs" />
+    <Compile Include="Assets\HoloToolkit\Input\Scripts\Gaze\GazeGestureManager.cs" />
     <Compile Include="Assets\HoloToolkit\Input\Scripts\Gaze\GazeManager.cs" />
     <Compile Include="Assets\HoloToolkit\Input\Scripts\Gaze\GazeStabilizer.cs" />
     <Compile Include="Assets\HoloToolkit\Input\Scripts\HandGuidance.cs" />

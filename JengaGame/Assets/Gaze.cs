@@ -21,8 +21,6 @@ public class Gaze : MonoBehaviour {
           
             //acknowledge in console we are looking at a hologram/object. 
             //Hit indicates the point a cursor will hit an object
-            print("hit");
-
 
         {
             // If the Raycast has succeeded and hit a hologram
