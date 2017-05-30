@@ -217,12 +217,12 @@
 
   <ItemGroup>
     <ProjectReference Include="D:\GIT\Jenga\JengaGame\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{5e2436b2-fdf0-40c0-aa4c-9939150ee9a5}</Project>
+      <Project>{b27dc7c8-2463-4c6d-b3d2-1d6c0f511e3f}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="D:\GIT\Jenga\JengaGame\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{d27c8be7-b647-4aeb-8a9f-378281b0df46}</Project>
+      <Project>{0c3b3e94-401b-438d-9198-0894a98b4029}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
       <Private>False</Private>
     </ProjectReference>

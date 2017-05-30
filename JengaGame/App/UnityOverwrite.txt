@@ -5,12 +5,12 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-JengaGame.sln: 0B725225EF08C641EC6FF2F6A181BA56
+JengaGame.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 JengaGame\App.cs: 8CD3F6587466707D4C5CBC3D826A2B93
-JengaGame\JengaGame.csproj: 042E3EF275675E4043B066667E378C63
-JengaGame\JengaGame.csproj.user: BEFB8AC4886C4CFDD3C68445D6F19B04
+JengaGame\JengaGame.csproj: 1FBCE103AEA3E31796988A5C003E9FE8
+JengaGame\JengaGame.csproj.user: modified
 JengaGame\Package.appxmanifest: CDDF20C5B210E5FF728AB7692E0EE75A
 JengaGame\project.json: 1D02BC64BAC0D041019673A1C4C51737
 JengaGame\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
