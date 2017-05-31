@@ -22,7 +22,7 @@ public class GazeGestureManager : MonoBehaviour
             // Send an OnSelect message to the focused object and its ancestors.
             if (FocusedObject != null)
             {
-                FocusedObject.SendMessageUpwards("OnSelect");
+                FocusedObject.SendMessage("OnSelect");
             }
         };
         recognizer.StartCapturingGestures();
@@ -44,6 +44,7 @@ public class GazeGestureManager : MonoBehaviour
         {
             // If the raycast hit a hologram, use that as the focused object.
             FocusedObject = hitInfo.collider.gameObject;
+            FocusedObject.SendMessage("OnGaze");
         }
         else
         {
