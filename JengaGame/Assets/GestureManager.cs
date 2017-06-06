@@ -14,6 +14,14 @@ public class GestureManager : MonoBehaviour {
     private bool isSelected;
     public bool isManipulation { get; private set; }
 
+    private Vector3 manipulationPreviousPosition;
+    private Rigidbody rb;
+
+    void Start()
+    {
+        rb = ManipulationObject.GetComponent<Rigidbody>();
+    }
+
     void Awake()
     {
         SelectionRecognizer = new GestureRecognizer();
@@ -39,20 +47,36 @@ public class GestureManager : MonoBehaviour {
     private void ManipulationRecognizer_ManipulationStartedEvent(InteractionSourceKind source, Vector3 position, Ray ray)
     {
         print("Manipulation Started");
+        PerformManipulationStart(position);
     }
 
     private void ManipulationRecognizer_ManipulationUpdatedEvent(InteractionSourceKind source, Vector3 position, Ray ray)
     {
         print("Manipulation Updated");
+        PerformManipulationUpdate(position);
     }
 
     private void ManipulationRecognizer_ManipulationCompletedEvent(InteractionSourceKind source, Vector3 position, Ray ray)
     {
+        rb.isKinematic = false;
         print("Manipulation Completed");
     }
 
     private void ManipulationRecognizer_ManipulationCanceledEvent(InteractionSourceKind source, Vector3 position, Ray ray)
     {
+        rb.isKinematic = false;
         print("Manipulation Cancelled");
+    }
+
+    private void PerformManipulationStart(Vector3 position)
+    {
+        rb.isKinematic = true;
+        manipulationPreviousPosition = position;
+    }
+
+    void PerformManipulationUpdate(Vector3 position)
+    {
+        Vector3 moveVector = new Vector3(0, 1, 0);
+        ManipulationObject.transform.position += moveVector;
     }
 }
