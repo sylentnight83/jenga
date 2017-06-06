@@ -85,6 +85,7 @@
     <Compile Include="Assets\BrickManager.cs" />
     <Compile Include="Assets\CubeManager.cs" />
     <Compile Include="Assets\Gaze.cs" />
+    <Compile Include="Assets\GestureManager.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\MetroHandleRef.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\Reflection\ReflectionExtensions.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\Reflection\TypeUtils.cs" />
